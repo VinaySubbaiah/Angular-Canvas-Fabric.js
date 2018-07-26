@@ -1,0 +1,41 @@
+<div class="container1">
+      <div class="button1-style doNotPrint">
+            <button class="btn btn-primary" (click)="fileInput.click()">View File</button>&nbsp;
+            <div class="dropdown">
+                  <button class="dropbtn">Rectangle</button>
+                  <div class="dropdown-content">
+                        <button class="btn btn-primary" (click)="captureEventsS()">
+                              <i class="fas fa-pencil-alt">&nbsp;Small</i>
+                        </button>
+                        <button class="btn btn-primary" (click)="captureEvents()">
+                              <i class="fas fa-pencil-alt">&nbsp;Medium</i>
+                        </button>
+                        <button class="btn btn-primary" (click)="captureEventsL()">
+                              <i class="fas fa-pencil-alt">&nbsp;Large</i>
+                        </button>
+                        <button class="btn btn-primary" (click)="captureEventsX()">
+                              <i class="fas fa-pencil-alt">&nbsp;X-Large</i>
+                        </button>
+                  </div>
+            </div>
+            &nbsp;
+            <button class="btn btn-primary" style="text-align: center" (click)="onPrint()">Download</button>
+            <div id="canvasSVGXL"> </div><div id="canvasSVG" class="svgdiv"> </div>
+      </div>
+
+     
+
+      <div id="canvasSVGL"> </div>
+
+      <div id="canvasSVGS"> </div>
+
+    
+
+
+      <input style="display: none;" (change)="onFileSelected()" type="file" id="file" #fileInput>
+      <pdf-viewer [src]="pdfSrc" [render-text]="true" [fit-to-page]="true" [stick-to-page]="true" [original-size]="false" id="pdf">
+      </pdf-viewer>
+
+</div>
+
+<canvas #canvas class="can"></canvas>

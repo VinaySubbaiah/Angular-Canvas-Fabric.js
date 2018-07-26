@@ -1,0 +1,107 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}  
+.container1 {
+    margin: 50px;
+}
+.container1 #pdf {
+    border: 1px solid rgb(24, 23, 23);  
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    left: 50px;
+    height: 100%;
+    z-index: -1;
+}
+.button1-style {
+    text-align: center;
+}
+#canvasSVG{
+    position: relative;
+    fill:white;
+    stroke:red;
+    stroke-width:3;
+    fill-opacity:0.1;
+    stroke-opacity:0.9;
+    height: 100%;
+}
+.svgdiv{
+    height: 1500px;
+    width: 1500px;
+}
+#canvasSVGS {
+    position: relative;
+    fill:white;
+    stroke:red;
+    stroke-width:1;
+    fill-opacity:0.1;
+    stroke-opacity:0.9;
+    height: 100%;
+}
+#canvasSVGL {
+    border: #4d4d4a solid;
+    position: relative;
+    fill:white;
+    stroke:red;
+    stroke-width:5;
+    fill-opacity:0.1;
+    stroke-opacity:0.9;
+    height: 100%;
+}
+#canvasSVGXL {
+    position: relative;
+    fill:white;
+    stroke:red;
+    stroke-width:8;
+    fill-opacity:0.1;
+    stroke-opacity:0.9;
+    height: 100%;
+}
+@media print{
+    .doNotPrint{
+        display:none !important;
+    }
+  }
+  .dropbtn {
+    background-color: rgb(21, 117, 206);
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1;
+}
+.dropdown-content button {
+    
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #4d4d4a;
+}
+#mycanvas {
+    position: fixed;
+    top: 50px;
+    left : 50px;
+    z-index: -1;
+}

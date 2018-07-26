@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+
+              "./node_modules/svg.js/dist/svg.min.js",
+              "./node_modules/svg.draggable.js/dist/svg.draggable.min.js",
+              "./node_modules/svg.draw.js/dist/svg.draw.min.js"
+            ]
           },
           "configurations": {
             "production": {
